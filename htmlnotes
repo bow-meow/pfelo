@@ -1,0 +1,43 @@
+flex:
+display: flex -> makes columns
+justify-content
+align-items
+flex-dirction: row -> is the default
+
+em & rem:
+em for spacing
+rem for font-size
+
+css:
+h2 span {
+}
+the above accesses the span element on h2's
+
+media queries:
+@media (min-width: 500px) and (orientation: landscape){
+    body{
+        background: blue;
+    }
+}
+
+nav tag:
+<nav>
+    <ul>
+        <li></li>
+    </ul>
+</nav>
+
+list style:
+list-style: none; // to get rid of bullets or numbering from ul
+
+html elements:
+aside - used for secondary content
+main - used for main content
+article - used for article-like content
+
+order // orders elements in a flexbox
+objectfit // crops an image when too big/small
+objectposition // for imgs
+
+:lastchild // modifier to a selector. my
+

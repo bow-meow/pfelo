@@ -1,0 +1,156 @@
+
+:root,
+:root.dark{
+    --primary: #FF3B30;
+    --secondary:#FFEB3B;
+    --accent: #4682B4;
+    --background: rgb(33, 33, 33, 0.8);
+    --highlight: #6A1B9A;
+}
+:root,
+:root.light{
+    --primary: #FF4F58;
+    --secondary:black;
+    --accent: #67B8D6;
+    --background: rgb(245, 245, 240, 0.9);
+    --text-foreground: green;
+    --highlight: #C084E6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin:0;
+    color: var(--secondary);
+    font-weight: 600;
+}
+/*
+h1:before{
+    content: '__';
+    color: var(--primary);
+    font-weight: 800;
+    font-size:2rem;
+}
+h1:after{
+    content: '__';
+    color: var(--primary);
+    font-weight: 800;
+    font-size:2rem;
+}
+h2:before {
+    content: '>> ';
+    color: var(--primary);
+}
+h3:before,
+h4:before,
+h5:before{
+    content: ">>> ";
+    color: var(--primary);
+}
+*/
+::selection{
+    color: var(--background);
+    background-color: var(--text-foreground);
+}
+
+/* generic */
+header{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../assets/nebula_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--text-foreground);
+    margin:0;
+}
+
+img{
+    width:15%;
+    border: 4px dashed red;
+}
+
+nav {
+    margin: auto 0;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-left: 0;
+}
+ul {
+    padding:0;
+}
+/* navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+nav li {
+    margin-right: 5px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+nav a:hover,
+nav a:focus{
+    text-decoration: underline;
+    color:var(--highlight)
+}
+
+a:hover,
+a:focus{
+    background-color: red;
+    color:black;
+}
+
+/* status cafe */
+#statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+/* classes */
+.container {
+    background-color: var(--background);
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+.container-flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.container-flex{
+    display:flex;
+    flex-direction: column;
+}
+
+.dark-light-mode-img{
+    width:5%;
+}
+.hero-card{
+    display:flex;
+    align-items: stretch;
+}
+.status-card{
+    margin-left:2em;
+}
